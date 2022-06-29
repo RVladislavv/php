@@ -6,7 +6,7 @@
 	$id = (int)($_GET['id'] ?? '');
 	$post = $articles[$id] ?? null;
 	$hasPost = ($post !== null);
-
+    createLogs();
 ?>
 <div class="content">
 	<? if($hasPost): ?>

@@ -1,7 +1,7 @@
 <?php
 
 	include_once('functions.php');
-
+    createLogs();
 	/*
 		your code here
 		check request method

@@ -2,9 +2,11 @@
 
 	include_once('functions.php');
 	$articles = getArticles();
-
+    createLogs();
 ?>
 <a href="add.php">Add article</a>
+<br><br>
+<a href="./logs">Watch logs</a>
 <hr>
 <div class="articles">
 	<? foreach($articles as $id => $article): ?>
