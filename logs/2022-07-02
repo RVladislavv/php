@@ -1,0 +1,4 @@
+01:24:38 127.0.0.1 / 
+01:25:32 127.0.0.1 /logs.php http://php/
+01:25:49 127.0.0.1 /showLogs.php?id=2022-07-02 http://php/logs.php
+01:26:11 127.0.0.1 /index.php http://php/showLogs.php?id=2022-07-02

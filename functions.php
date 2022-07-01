@@ -60,11 +60,15 @@
         $name = date('Y-m-d');
         $path = './logs/' . $name;
         $time = date('H:i:s');
-        $data = "{$time} {$_SERVER['REMOTE_ADDR']} {$_SERVER['REQUEST_URI']} {$_SERVER['HTTP_REFERER']}\n";
+        $data = "$time {$_SERVER['REMOTE_ADDR']} {$_SERVER['REQUEST_URI']} {$_SERVER['HTTP_REFERER']}\n";
 
         $res = fopen($path, 'a');
         fwrite($res, $data);
         fclose($res);
 
+    }
+
+    function checkImageName(string $name) : bool{
+        return !!preg_match('/.*\.txt$/', $name);
     }
 	/* end --- black box */
