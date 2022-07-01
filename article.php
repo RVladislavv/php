@@ -16,7 +16,7 @@
 			<hr>
 			<a href="delete.php?id=<?=$id?>">Remove</a>
             <hr>
-            <a href="edit.php?id=<?=$id?>">Change article</a>
+            <a href="edit.php?id=<?=$id?>">Edit</a>
 		</div>
 	<? else: ?>
 		<div class="e404">
