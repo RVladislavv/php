@@ -11,6 +11,7 @@
 
     $id = $_GET['id'];
     removeArticle($id);
+    createLogs();
 ?>
 Your article has been deleted.
 <hr>

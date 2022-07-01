@@ -7,7 +7,7 @@ $id = (int)($_GET['id'] ?? '');
 $post = $articles[$id] ?? null;
 $hasPost = ($post !== null);
 
-
+createLogs();
 
 $isSend = false;
 $err = '';
